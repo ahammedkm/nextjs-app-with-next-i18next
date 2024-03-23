@@ -1,4 +1,3 @@
-![next-i18next and SimpleLocalize example](screenshot.png)
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
@@ -62,37 +61,6 @@ const nextConfig = {
 
 module.exports = nextConfig
 ```
-
-## SimpleLocalize configuration
-
-💿 Install [SimpleLocalize CLI](https://simplelocalize.io/docs/cli/get-started/)
-```bash
-curl -s https://get.simplelocalize.io/2.0/install | bash
-```
-
-🧷 Create configuration file
-
-```yaml
-# 📦 file: ./simplelocalize.yml
-apiKey: YOUR_PROJECT_API_KEY
-downloadFormat: single-language-json
-downloadPath: ./public/locales/{lang}/{ns}.json
-
-uploadFormat: single-language-json
-uploadPath: ./public/locales/{lang}/{ns}.json
-```
-
-⤵️ [Download translations](https://simplelocalize.io/docs/cli/download-translations/) to `./public/locales` directory
-```bash
-simplelocalize download
-```
-
-⤴️ [Upload translations](https://simplelocalize.io/docs/cli/upload-translations/) from `./public/locales` directory
-```bash
-simplelocalize upload
-```
-
-> You can [automate process of adding translation keys](https://simplelocalize.io/docs/integrations/i18next/) from project to SimpleLocalize.
 
 
 ## Usage
